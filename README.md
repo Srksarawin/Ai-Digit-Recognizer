@@ -71,7 +71,7 @@ graph TD
     subgraph Backend["Backend — FastAPI"]
         Main["main.py<br/>/predict, /feedback, /health"]
         Model["model.py<br/>DigitCNN (PyTorch)"]
-        Weights["digit_cnn.pth<br/>trained weights"]
+        Weights["digit_cnn.pt<br/>trained weights"]
         DB[("feedback.db<br/>SQLite")]
         Imgs["feedback_images/<br/>saved PNGs"]
     end
